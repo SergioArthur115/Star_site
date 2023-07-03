@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação</title>
+</head>
+
+<body>
+    <!-- Título centralizado -->
+    <h1 align="center">
+        <a href="../index.html">Início |</a>
+        <a href="pagina2.html">Página 2 |</a>
+        <a href="pagina3.html">Página 3 |</a>
+        <a href="pagina4.html">Página 4 |</a>
+        <a href="pagina5.html">Página 5 |</a>
+        <a href="pagina6.html">Página 6 |</a>
+
+    </h1>
+
+    <!-- Elemento de linha horizontal -->
+    <hr>
+
+    <h1>Trabalhando com Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <h2>Elementos Input</h2>
+        <br>
+        <h3>Campo de Texto</h3>
+        <label>Seu Nome:
+            <input type="text" name="nome">
+        </label>
+        <br>
+        <br>
+        <label>Seu Sobrenome:
+            <input type="text" name="sobrenome">
+        </label>
+        <br>
+        <br>
+        <label>Sua Senha:
+            <input type="password" name="senha">
+        </label>
+        <br>
+        <br>
+        <h3>Campo Radio</h3>
+        <label>
+            <input type="radio" name="tipo" value="pf">Pessoa Física
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="radio" name="tipo" value="pj">Pessoa Juridica
+        </label>
+        <h3>Campo Checkbox</h3>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" name="cnh" value="cnh">Possui CNH
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" name="passaporte" value="passaporte">Possui Passaporte
+        </label>
+        <br>
+        <br>
+        <h3>Campo de Upload de Arquivo</h3>
+        <label>Campo de upload de arquivo
+            <input type="file" name="foto" accept="image/*">
+        </label>
+        <br>
+        <br>
+        <h2>Elemento Textarea</h2>
+        <textarea name="obs" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+        <h2>Elemento Select</h2>
+        <select name="carro">
+            <option value="fusca">Fusca</option>
+            <option value="fiat147">Fiat 147</option>
+            <option value="opala">Opala</option>
+        </select>
+        <br>
+        <br>
+        <h2>Botão Limpar</h2>
+        <input type="reset" value="Limpar">
+        <br>
+        <br>
+        <h2>Botão Enviar</h2>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <hr>
+    <br>
+    <br>
+    <a href="https://pt-br.facebook.com/" target="black">
+        <img src="../imagens/logoface.png" alt="Facebook logo" width="68" height="68" align="left" hspace="8"
+            title="Facebook">
+    </a>
+    <a href="https://www.instagram.com/" target="black">
+        <img src="../imagens/logoinst.png" alt="Instagram logo" width="68" height="68" align="left" hspace="8"
+            title="Instagram">
+    </a>
+    <a href="https://twitter.com/" target="black">
+        <img src="../imagens/logotwi.png" alt="Twitter logo" width="68" height="68" align="left" hspace="8"
+            title="Twitter">
+    </a>
+</body>
+
+</html>
