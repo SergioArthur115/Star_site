@@ -22,72 +22,149 @@
     <!-- Elemento de linha horizontal -->
     <hr>
 
-    <h1>Trabalhando com Formulário</h1>
-    <form action="cadastro.php" method="post">
-        <h2>Elementos Input</h2>
-        <br>
-        <h3>Campo de Texto</h3>
-        <label>Seu Nome:
-            <input type="text" name="nome">
-        </label>
-        <br>
-        <br>
-        <label>Seu Sobrenome:
-            <input type="text" name="sobrenome">
-        </label>
-        <br>
-        <br>
-        <label>Sua Senha:
-            <input type="password" name="senha">
-        </label>
-        <br>
-        <br>
-        <h3>Campo Radio</h3>
-        <label>
-            <input type="radio" name="tipo" value="pf">Pessoa Física
-        </label>
-        <br>
-        <br>
-        <label>
-            <input type="radio" name="tipo" value="pj">Pessoa Juridica
-        </label>
-        <h3>Campo Checkbox</h3>
-        <br>
-        <br>
-        <label>
-            <input type="checkbox" name="cnh" value="cnh">Possui CNH
-        </label>
-        <br>
-        <br>
-        <label>
-            <input type="checkbox" name="passaporte" value="passaporte">Possui Passaporte
-        </label>
-        <br>
-        <br>
-        <h3>Campo de Upload de Arquivo</h3>
-        <label>Campo de upload de arquivo
-            <input type="file" name="foto" accept="image/*">
-        </label>
-        <br>
-        <br>
-        <h2>Elemento Textarea</h2>
-        <textarea name="obs" rows="4" cols="50"></textarea>
-        <br>
-        <br>
-        <h2>Elemento Select</h2>
-        <select name="carro">
-            <option value="fusca">Fusca</option>
-            <option value="fiat147">Fiat 147</option>
-            <option value="opala">Opala</option>
-        </select>
-        <br>
-        <br>
-        <h2>Botão Limpar</h2>
-        <input type="reset" value="Limpar">
-        <br>
-        <br>
-        <h2>Botão Enviar</h2>
-        <input type="submit" value="Enviar">
+    <h2 align="center">Cadastro de cliente</h2>
+    <form action="./cadastro.php" method="post">
+        <table align="center">
+            <thead>
+                <tr>
+                    <td colspan="2" align="center">
+                        <h3>Todos os campos são obrigatórios</h3>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="right">
+                        <h3><label>Nome:</label></h3>
+                    </td>
+                    <td align="left"><input type="text" name="nome" required maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Sobrenome:</label></h3>
+                    </td>
+                    <td align="left"><input type="text" name="Sobrenome" required size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Data de Nascimento:</label></h3>
+                    </td>
+                    <td align="left"><input type="date" name="dataNasc" required></td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Endereço:</label></h3>
+                    </td>
+                    <td align="left"><input type="text" name="endereco" required size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Bairro:</label></h3>
+                    </td>
+                    <td align="left"><input type="text" name="bairro" required size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Cidade:</label></h3>
+                    </td>
+                    <td align="left"><input type="text" name="cidade" required size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Estado:</label></h3>
+                    </td>
+                    <td align="left">
+                        <select name="estado" required>
+                            <option selected value="">Selecione o Estado (UF)</option>
+                            <option value="Acre">Acre</option>
+                            <option value="Alagoas">Alagoas</option>
+                            <option value="Amapá">Amapá</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Bahia">Bahia</option>
+                            <option value="Ceará">Ceará</option>
+                            <option value="Distrito Federal">Distrito Federal</option>
+                            <option value="Espírito Santo">Espírito Santo</option>
+                            <option value="Goiás">Goiás</option>
+                            <option value="Maranhão">Maranhão</option>
+                            <option value="Mato Grosso">Mato Grosso</option>
+                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                            <option value="Minas Gerais">Minas Gerais</option>
+                            <option value="Pará">Pará</option>
+                            <option value="Paraíba">Paraíba</option>
+                            <option value="Paraná">Paraná</option>
+                            <option value="Pernambuco">Pernambuco</option>
+                            <option value="Piauí">Piauí</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                            <option value="Rondônia">Rondônia</option>
+                            <option value="Roraima">Roraima</option>
+                            <option value="Santa Catarina">Santa Catarina</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Sergipe">Sergipe</option>
+                            <option value="Tocantins">Tocantins</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Sexo:</label></h3>
+                    </td>
+                    <td align="left">
+                        <input type="radio" name="sexo" value="M">Masculino
+                        <input type="radio" name="sexo" value="F" checked>Feminino
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Cel:</label></h3>
+                    </td>
+                    <td align="left">
+                        <input type="tel" name="celular" required size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>E=mail:</label></h3>
+                    </td>
+                    <td align="left">
+                        <input type="email" name="email" required placeholder="nome@dominio.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Usuário:</label></h3>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="usuario" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Senha:</label></h3>
+                    </td>
+                    <td align="left">
+                        <input type="password" name="senha" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <h3><label>Observação:</label></h3>
+                    </td>
+                    <td align="left">
+                        <textarea name="obs" cols="30" rows="4"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" align="center"><br>
+                        <input type="submit" value="Cadastrar">
+                        <input type="reset" value="Limpar">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
     </form>
 
     <hr>
