@@ -1,0 +1,52 @@
+#s1 {
+    text-align: center;
+}
+
+#s1 a:visited {
+    color: white;
+}
+
+#s1 a:hover {
+    color: blue;
+}
+
+#s1 a:active {
+    color: black;
+}
+
+#s1 a:link,
+a:visited {
+    background-color: #f44336;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    width: 120px;
+}
+
+#s1 a:hover,
+a:active {
+    background-color: green;
+}
+
+#s2 a:link {
+    color: green;
+}
+
+#s2 a:visited {
+    color: red;
+}
+
+#s2 a:hover {
+    color: yellow;
+}
+
+#s2 a:active {
+    color: blue;
+}
+
+#s2 a:link,
+a:visited {
+    padding: 10px 20px;
+    text-decoration: none;
+}
